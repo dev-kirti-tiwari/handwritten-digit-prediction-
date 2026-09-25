@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#drawCanvas {
+    /* Black background to match MNIST dataset natively */
+    background-color: black;
+    border: 2px solid #333;
+    border-radius: 8px;
+    cursor: crosshair;
+    touch-action: none; /* Prevents scrolling while drawing on mobile */
+}
+
+.controls {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#clearBtn {
+    background-color: #dc3545;
+}
+
+#clearBtn:hover {
+    background-color: #a71d2a;
+}
+
+.result-box {
+    margin-top: 20px;
+    padding: 10px;
+    background: #e9ecef;
+    border-radius: 5px;
+}
+
+#prediction {
+    font-weight: bold;
+    color: #28a745;
+}

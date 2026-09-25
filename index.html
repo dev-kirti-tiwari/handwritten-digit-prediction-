@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MNIST Digit Recognizer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Draw a Digit (0-9)</h1>
+        
+        <canvas id="drawCanvas" width="280" height="280"></canvas>
+        
+        <div class="controls">
+            <button id="clearBtn">Clear</button>
+            <button id="predictBtn">Predict</button>
+        </div>
+
+        <div class="result-box">
+            <h2>Prediction: <span id="prediction">-</span></h2>
+        </div>
+    </div>
+
+    <canvas id="hiddenCanvas" width="28" height="28" style="display: none;"></canvas>
+
+    <script src="logic.js"></script>
+</body>
+</html>
